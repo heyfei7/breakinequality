@@ -1,0 +1,21 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="stylesheet/style.css">
+</head>
+<div class="container">
+	<div class="box1"><a href="/">Home</a></div>
+	<div class="box2"><a href="/logout">Log Out</a></div>
+	</div>
+
+<div class="newpost">
+<form method="post">
+	<span class="heading">Make a new post!</span>
+	<div class="mytextdiv"><input type="text" name="title" value="{{title}}" class="mytext" placeholder="Title"><br></div>
+	<div class="mytextdiv"><textarea type="text" name="content" class="mytextarea" placeholder="Content">{{content}}</textarea><br></div>
+	<div><input type="submit"></div>
+	{{error}}
+	</form>
+</div>
+</html>
